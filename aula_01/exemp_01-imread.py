@@ -11,6 +11,9 @@ obj_img = cv2.imread(r"C:\Users\milah\Documents\curso_opencv\imgs\cadeira_01.jpg
 
 # Aqui, a biblioteca matplotlib é importada para exibir a imagem de forma gráfica.
 from matplotlib import pyplot as plt
+
+# O OpenCV lê imagens no formato BGR (Blue, Green, Red), enquanto o Matplotlib exibe imagens no formato RGB.
+# Por isso, usamos 'cv2.cvtColor' para converter a imagem de BGR para RGB antes de exibi-la corretamente.
 obj_img = cv2.cvtColor(obj_img, cv2.COLOR_BGR2RGB)
 
 # 'plt.imshow' exibe a imagem carregada na tela.
